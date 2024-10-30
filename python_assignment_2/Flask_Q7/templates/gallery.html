@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .gallery img {
+            max-width: 300px; 
+            height: auto;
+            border: 2px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div class="gallery">
+        <img src="{{ url_for('static', filename='images\18.jpg') }}" alt="Image 1">
+        <img src="{{ url_for('static', filename='images\19.jpg') }}" alt="Image 2">
+        <img src="{{ url_for('static', filename='images\22.jpeg') }}" alt="Image 3">
+    </div>
+</body>
+</html>

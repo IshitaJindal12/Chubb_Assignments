@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        .feedback-entry {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+
+    <form method="POST" action="/feedback">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" required></textarea>
+        <br>
+        <button type="submit">Submit Feedback</button>
+    </form>
+
+    <h2>Feedback History:</h2>
+    <div>
+        {% for entry in feedbacks %}
+            <div class="feedback-entry">
+                <strong>{{ entry.name }}:</strong>
+                <p>{{ entry.feedback }}</p>
+            </div>
+        {% else %}
+            <p>No feedback yet.</p>
+        {% endfor %}
+    </div>
+</body>
+</html>
