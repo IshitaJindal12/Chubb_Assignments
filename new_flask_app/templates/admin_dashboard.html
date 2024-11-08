@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <h2>Admin Dashboard</h2>
+    <p>Welcome, {{ current_user.username }}! You can add new feedback data or delete existing feedback data.</p>
+    <a href="{{ url_for('append_data') }}" class="btn btn-primary">Add New Feedback Data</a>
+    
+    <!-- Card View for Basic Feedback Information -->
+    {% for feedback in data %}
+        <div class="card mt-3">
+            <div class="card-body">
+                <h5 class="card-title">{{ feedback.first_name }} {{ feedback.last_name }}</h5>
+                <p class="card-text">{{ feedback.sentiment_category }}</p>
+                <a href="{{ url_for('delete_data', id=feedback.feedback_id) }}" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+    {% endfor %}
+
+    <!-- Detailed Table View for Feedback Data -->
+    <table border="1" class="table table-striped mt-3">
+        <thead>
+            <tr>
+                <th>Feedback ID</th>
+                <th>User ID</th>
+                <th>Source</th>
+                <th>Content</th>
+                <th>Sentiment Score</th>
+                <th>Sentiment Category</th>
+                <th>Keywords</th>
+                <th>Timestamp</th>
+                <th>Analysis Date</th>
+                <th>Email</th>
+                <th>Time Period</th>
+                <th>Total Feedback</th>
+                <th>Positive Feedback Count</th>
+                <th>Neutral Feedback Count</th>
+                <th>Negative Feedback Count</th>
+                <th>Average Sentiment Score</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for feedback in new_feedback %}
+            <tr>
+                <td>{{ feedback.feedback_id }}</td>
+                <td>{{ feedback.user_id }}</td>
+                <td>{{ feedback.source }}</td>
+                <td>{{ feedback.content }}</td>
+                <td>{{ feedback.sentiment_score }}</td>
+                <td>{{ feedback.sentiment_category }}</td>
+                <td>{{ feedback.keywords }}</td>
+                <td>{{ feedback.timestamp }}</td>
+                <td>{{ feedback.analysis_date }}</td>
+                <td>{{ feedback.email }}</td>
+                <td>{{ feedback.time_period }}</td>
+                <td>{{ feedback.total_feedback }}</td>
+                <td>{{ feedback.positive_feedback_count }}</td>
+                <td>{{ feedback.neutral_feedback_count }}</td>
+                <td>{{ feedback.negative_feedback_count }}</td>
+                <td>{{ feedback.average_sentiment_score }}</td>
+                <td>
+                    <a href="{{ url_for('admin_edit_data', id=feedback.feedback_id) }}" class="btn btn-warning">Edit</a>
+                    <a href="{{ url_for('delete_data', id=feedback.feedback_id) }}" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this entry?');">Delete</a>                         
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+</html>
+{% endblock %}

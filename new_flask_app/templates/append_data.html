@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Feedback Data</title>
+</head>
+<body>
+    <h2>Add New Feedback Data</h2>
+    <form method="POST">
+        
+        <div>
+            <label for="feedback_id">Feedback ID</label>
+            <input type="text" id="feedback_id" name="feedback_id" required>
+        </div>
+        <div>
+            <label for="user_id">User ID</label>
+            <input type="text" id="user_id" name="user_id" required>
+        </div>
+        <div>
+            <label for="source">Source</label>
+            <input type="text" id="source" name="source" required>
+        </div>
+        <div>
+            <label for="content">Content</label>
+            <textarea id="content" name="content" required></textarea>
+        </div>
+        <div>
+            <label for="sentiment_score">Sentiment Score</label>
+            <input type="number" id="sentiment_score" name="sentiment_score" step="0.01" required>
+        </div>
+        <div>
+            <label for="sentiment_category">Sentiment Category</label>
+            <input type="text" id="sentiment_category" name="sentiment_category" required>
+        </div>
+        <div>
+            <label for="keywords">Keywords</label>
+            <input type="text" id="keywords" name="keywords">
+        </div>
+        <div>
+            <label for="timestamp">Timestamp</label>
+            <input type="datetime-local" id="timestamp" name="timestamp" required>
+        </div>
+        <div>
+            <label for="analysis_date">Analysis Date</label>
+            <input type="date" id="analysis_date" name="analysis_date" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="time_period">Time Period</label>
+            <input type="text" id="time_period" name="time_period">
+        </div>
+        <div>
+            <label for="total_feedback">Total Feedback</label>
+            <input type="number" id="total_feedback" name="total_feedback">
+        </div>
+        <div>
+            <label for="positive_feedback_count">Positive Feedback Count</label>
+            <input type="number" id="positive_feedback_count" name="positive_feedback_count">
+        </div>
+        <div>
+            <label for="neutral_feedback_count">Neutral Feedback Count</label>
+            <input type="number" id="neutral_feedback_count" name="neutral_feedback_count">
+        </div>
+        <div>
+            <label for="negative_feedback_count">Negative Feedback Count</label>
+            <input type="number" id="negative_feedback_count" name="negative_feedback_count">
+        </div>
+        <div>
+            <label for="average_sentiment_score">Average Sentiment Score</label>
+            <input type="number" id="average_sentiment_score" name="average_sentiment_score" step="0.01">
+        </div>
+        
+        <button type="submit">Add Feedback Data</button>
+    </form>
+</body>
+</html>

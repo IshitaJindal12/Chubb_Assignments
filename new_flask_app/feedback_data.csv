@@ -1,0 +1,21 @@
+feedback_id,sentiment_id,metric_id,source,content,sentiment_score,sentiment_category,keywords,timestamp,analysis_date,user_id,email,time_period,total_feedback,positive_feedback_count,neutral_feedback_count,negative_feedback_count,average_sentiment_score
+21,21,21,social media,Sample feedback content 21,0.55,positive,delivery,2024-10-18 09:46:16,2024-10-18,22,user22@example.com,monthly,41,11,6,10,0.7
+22,22,22,survey,Sample feedback content 22,0.6,neutral,pricing,2024-10-17 09:46:16,2024-10-17,23,user23@example.com,monthly,42,12,7,11,0.8
+23,23,23,review site,Sample feedback content 23,0.65,negative,recommend,2024-10-16 09:46:16,2024-10-16,24,user24@example.com,monthly,43,13,8,12,0.9
+24,24,24,social media,Sample feedback content 24,0.7,positive,service,2024-10-15 09:46:16,2024-10-15,25,user25@example.com,monthly,44,14,9,5,0.4
+25,25,25,survey,Sample feedback content 25,0.75,neutral,quality,2024-10-14 09:46:16,2024-10-14,26,user26@example.com,monthly,45,15,10,6,0.5
+26,26,26,review site,Sample feedback content 26,0.8,negative,response,2024-10-13 09:46:16,2024-10-13,27,user27@example.com,monthly,46,16,11,7,0.6
+27,27,27,social media,Sample feedback content 27,0.85,positive,delivery,2024-10-12 09:46:16,2024-10-12,28,user28@example.com,monthly,47,17,12,8,0.7
+28,28,28,survey,Sample feedback content 28,0.9,neutral,pricing,2024-10-11 09:46:16,2024-10-11,29,user29@example.com,monthly,48,18,13,9,0.8
+29,29,29,review site,Sample feedback content 29,0.95,negative,recommend,2024-10-10 09:46:16,2024-10-10,30,user30@example.com,monthly,49,19,14,10,0.9
+30,30,30,social media,Sample feedback content 30,0.5,positive,service,2024-10-09 09:46:16,2024-10-09,31,user31@example.com,monthly,50,5,5,11,0.4
+31,31,31,survey,Sample feedback content 31,0.55,neutral,quality,2024-10-08 09:46:16,2024-10-08,32,user32@example.com,monthly,51,6,6,12,0.5
+32,32,32,review site,Sample feedback content 32,0.6,negative,response,2024-10-07 09:46:16,2024-10-07,33,user33@example.com,monthly,52,7,7,5,0.6
+33,33,33,social media,Sample feedback content 33,0.65,positive,delivery,2024-10-06 09:46:16,2024-10-06,34,user34@example.com,monthly,53,8,8,6,0.7
+34,34,34,survey,Sample feedback content 34,0.7,neutral,pricing,2024-10-05 09:46:16,2024-10-05,35,user35@example.com,monthly,54,9,9,7,0.8
+35,35,35,review site,Sample feedback content 35,0.75,negative,recommend,2024-10-04 09:46:16,2024-10-04,36,user36@example.com,monthly,55,10,10,8,0.9
+36,36,36,social media,Sample feedback content 36,0.8,positive,service,2024-10-03 09:46:16,2024-10-03,37,user37@example.com,monthly,56,11,11,9,0.4
+37,37,37,survey,Sample feedback content 37,0.85,neutral,quality,2024-10-02 09:46:16,2024-10-02,38,user38@example.com,monthly,57,12,12,10,0.5
+38,38,38,review site,Sample feedback content 38,0.9,negative,response,2024-10-01 09:46:16,2024-10-01,39,user39@example.com,monthly,58,13,13,11,0.6
+39,39,39,social media,Sample feedback content 39,0.95,positive,delivery,2024-09-30 09:46:16,2024-09-30,40,user40@example.com,monthly,59,14,14,12,0.7
+40,40,40,survey,Sample feedback content 40,0.5,neutral,pricing,2024-09-29 09:46:16,2024-09-29,41,user41@example.com,monthly,60,15,5,5,0.8

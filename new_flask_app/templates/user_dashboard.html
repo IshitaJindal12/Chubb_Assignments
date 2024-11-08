@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>User Dashboard</h2>
+<p>Welcome, {{ current_user.username }}! Access and update your feedback data here.</p>
+
+<form method="POST" action="{{ url_for('user_access_data') }}">
+    <div class="mb-3">
+        <label for="user_id" class="form-label">User ID</label>
+        <input type="text" name="user_id" id="user_id" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" name="email" id="email" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label for="feedback_id" class="form-label">Feedback ID</label>
+        <input type="text" name="feedback_id" id="feedback_id" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Access Data</button>
+</form>
+
+{% if feedback_data %}
+    <!-- Display the feedback data editing form if data is found -->
+    <form method="POST" action="{{ url_for('user_update_data', id=feedback_data.id) }}">
+        <h3>Edit Your Feedback Data</h3>
+
+        <div class="mb-3">
+            <label for="first_name" class="form-label">First Name</label>
+            <input type="text" name="first_name" id="first_name" class="form-control" value="{{ feedback_data.first_name }}" required>
+        </div>
+        <div class="mb-3">
+            <label for="last_name" class="form-label">Last Name</label>
+            <input type="text" name="last_name" id="last_name" class="form-control" value="{{ feedback_data.last_name }}" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="age" class="form-label">Age</label>
+            <input type="number" name="age" id="age" class="form-control" value="{{ feedback_data.age }}" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="gender" class="form-label">Gender</label>
+            <input type="text" name="gender" id="gender" class="form-control" value="{{ feedback_data.gender }}" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+            <input type="text" name="location" id="location" class="form-control" value="{{ feedback_data.location }}" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="date_recorded" class="form-label">Date Recorded</label>
+            <input type="date" name="date_recorded" id="date_recorded" class="form-control" value="{{ feedback_data.date_recorded }}" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="feedback_text" class="form-label">Feedback</label>
+            <textarea name="feedback_text" id="feedback_text" class="form-control" required>{{ feedback_data.feedback_text }}</textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="sentiment" class="form-label">Sentiment</label>
+            <input type="text" name="sentiment" id="sentiment" class="form-control" value="{{ feedback_data.sentiment }}" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="source" class="form-label">Source</label>
+            <input type="text" name="source" id="source" class="form-control" value="{{ feedback_data.source }}" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="tags" class="form-label">Tags</label>
+            <input type="text" name="tags" id="tags" class="form-control" value="{{ feedback_data.tags }}">
+        </div>
+
+        <button type="submit" class="btn btn-success">Update Data</button>
+    </form>
+{% elif patient_data is not none %}
+    <p>Data not found for the provided information.</p>
+{% endif %}
+
+{% endblock %}

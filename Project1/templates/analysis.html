@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Analysis</h2>
+
+<div class="row">
+    <div class="col-md-6">
+        <h4>Distribution of BMI</h4>
+        <img src="{{ url_for('static', filename='plots/bmi_distribution.png') }}" alt="BMI Distribution" class="img-fluid">
+    </div>
+    <div class="col-md-6">
+        <h4>Water Intake vs Mood Distribution</h4>
+        <img src="{{ url_for('static', filename='plots/water_intake_vs_mood.png') }}" alt="Heart Rate Over Time" class="img-fluid">
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-6">
+        <h4>Exercise Frequency by Gender</h4>
+        <img src="{{ url_for('static', filename='plots/exercise_frequency_by_gender.png') }}" alt="Calories Burned by Day" class="img-fluid">
+    </div>
+    <div class="col-md-6">
+        <h4>Sleep Quality vs Mood</h4>
+        <img src="{{ url_for('static', filename='plots/sleep_quality_vs_mood.png') }}" alt="Sleep Quality vs Mood" class="img-fluid">
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-12">
+        <h4>Correlation Heatmap of Health Metrics</h4>
+        <img src="{{ url_for('static', filename='plots/correlation_heatmap.png') }}" alt="Correlation Heatmap" class="img-fluid">
+    </div>
+</div>
+
+{% endblock %}

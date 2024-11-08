@@ -1,0 +1,21 @@
+user_id,first_name,last_name,age,gender,location,date_recorded,weight_kg,height_cm,bmi,heart_rate_bpm,bp_systolic,bp_diastolic,steps_count,calories_burned,sleep_duration_hours,sleep_quality,mood,stress_level,water_intake_liters
+21,Jane,Jones,39,female,Los Angeles,2024-09-05,71,171,24.28,81,101,61,1210,305,7,1,calm,2,2
+22,Alice,Taylor,40,male,Chicago,2024-09-02,72,172,24.34,82,102,62,1220,310,8,2,stressed,3,3
+23,Bob,Brown,41,female,Houston,2024-08-30,73,173,24.39,83,103,63,1230,315,9,3,relaxed,4,4
+24,Charlie,Williams,42,male,Phoenix,2024-08-27,74,174,24.44,84,104,64,1240,320,7,4,happy,5,1
+25,David,Davis,43,female,Philadelphia,2024-08-24,75,175,24.49,85,105,65,1250,325,8,0,anxious,1,2
+26,Eve,Miller,44,male,San Antonio,2024-08-21,76,176,24.54,86,106,66,1260,330,9,1,sad,2,3
+27,Grace,Wilson,45,female,San Diego,2024-08-18,77,177,24.58,87,107,67,1270,335,7,2,excited,3,4
+28,Helen,Moore,46,male,Dallas,2024-08-15,78,178,24.62,88,108,68,1280,340,8,3,angry,4,1
+29,Ivy,Anderson,47,female,Austin,2024-08-12,79,179,24.66,89,109,69,1290,345,9,4,calm,5,2
+30,John,Smith,48,male,New York,2024-08-09,50,150,22.22,90,110,60,1300,350,7,0,stressed,1,3
+31,Jane,Jones,49,female,Los Angeles,2024-08-06,51,151,22.37,91,111,61,1310,355,8,1,relaxed,2,4
+32,Alice,Taylor,50,male,Chicago,2024-08-03,52,152,22.51,92,112,62,1320,360,9,2,happy,3,1
+33,Bob,Brown,51,female,Houston,2024-07-31,53,153,22.64,93,113,63,1330,365,7,3,anxious,4,2
+34,Charlie,Williams,52,male,Phoenix,2024-07-28,54,154,22.77,94,114,64,1340,370,8,4,sad,5,3
+35,David,Davis,53,female,Philadelphia,2024-07-25,55,155,22.89,95,115,65,1350,375,9,0,excited,1,4
+36,Eve,Miller,54,male,San Antonio,2024-07-22,56,156,23.01,96,116,66,1360,380,7,1,angry,2,1
+37,Grace,Wilson,55,female,San Diego,2024-07-19,57,157,23.12,97,117,67,1370,385,8,2,calm,3,2
+38,Helen,Moore,56,male,Dallas,2024-07-16,58,158,23.23,98,118,68,1380,390,9,3,stressed,4,3
+39,Ivy,Anderson,57,female,Austin,2024-07-13,59,159,23.34,99,119,69,1390,395,7,4,relaxed,5,4
+40,John,Smith,58,male,New York,2024-07-10,60,160,23.44,60,100,60,1400,400,8,0,happy,1,1

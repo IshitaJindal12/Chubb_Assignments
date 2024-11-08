@@ -1,0 +1,101 @@
+user_id,first_name,last_name,age,gender,location,date_recorded,weight_kg,height_cm,bmi,heart_rate_bpm,bp_systolic,bp_diastolic,steps_count,calories_burned,sleep_duration_hours,sleep_quality,mood,stress_level,water_intake_liters
+1,Jane,Jones,19,female,Los Angeles,2024-11-04,51,151,22.37,61,101,61,1010,205,8,1,anxious,2,2
+2,Alice,Taylor,20,male,Chicago,2024-11-01,52,152,22.51,62,102,62,1020,210,9,2,sad,3,3
+3,Bob,Brown,21,female,Houston,2024-10-29,53,153,22.64,63,103,63,1030,215,7,3,excited,4,4
+4,Charlie,Williams,22,male,Phoenix,2024-10-26,54,154,22.77,64,104,64,1040,220,8,4,angry,5,1
+5,David,Davis,23,female,Philadelphia,2024-10-23,55,155,22.89,65,105,65,1050,225,9,0,calm,1,2
+6,Eve,Miller,24,male,San Antonio,2024-10-20,56,156,23.01,66,106,66,1060,230,7,1,stressed,2,3
+7,Grace,Wilson,25,female,San Diego,2024-10-17,57,157,23.12,67,107,67,1070,235,8,2,relaxed,3,4
+8,Helen,Moore,26,male,Dallas,2024-10-14,58,158,23.23,68,108,68,1080,240,9,3,happy,4,1
+9,Ivy,Anderson,27,female,Austin,2024-10-11,59,159,23.34,69,109,69,1090,245,7,4,anxious,5,2
+10,John,Smith,28,male,New York,2024-10-08,60,160,23.44,70,110,60,1100,250,8,0,sad,1,3
+11,Jane,Jones,29,female,Los Angeles,2024-10-05,61,161,23.53,71,111,61,1110,255,9,1,excited,2,4
+12,Alice,Taylor,30,male,Chicago,2024-10-02,62,162,23.62,72,112,62,1120,260,7,2,angry,3,1
+13,Bob,Brown,31,female,Houston,2024-09-29,63,163,23.71,73,113,63,1130,265,8,3,calm,4,2
+14,Charlie,Williams,32,male,Phoenix,2024-09-26,64,164,23.8,74,114,64,1140,270,9,4,stressed,5,3
+15,David,Davis,33,female,Philadelphia,2024-09-23,65,165,23.88,75,115,65,1150,275,7,0,relaxed,1,4
+16,Eve,Miller,34,male,San Antonio,2024-09-20,66,166,23.95,76,116,66,1160,280,8,1,happy,2,1
+17,Grace,Wilson,35,female,San Diego,2024-09-17,67,167,24.02,77,117,67,1170,285,9,2,anxious,3,2
+18,Helen,Moore,36,male,Dallas,2024-09-14,68,168,24.09,78,118,68,1180,290,7,3,sad,4,3
+19,Ivy,Anderson,37,female,Austin,2024-09-11,69,169,24.16,79,119,69,1190,295,8,4,excited,5,4
+20,John,Smith,38,male,New York,2024-09-08,70,170,24.22,80,100,60,1200,300,9,0,angry,1,1
+21,Jane,Jones,39,female,Los Angeles,2024-09-05,71,171,24.28,81,101,61,1210,305,7,1,calm,2,2
+22,Alice,Taylor,40,male,Chicago,2024-09-02,72,172,24.34,82,102,62,1220,310,8,2,stressed,3,3
+23,Bob,Brown,41,female,Houston,2024-08-30,73,173,24.39,83,103,63,1230,315,9,3,relaxed,4,4
+24,Charlie,Williams,42,male,Phoenix,2024-08-27,74,174,24.44,84,104,64,1240,320,7,4,happy,5,1
+25,David,Davis,43,female,Philadelphia,2024-08-24,75,175,24.49,85,105,65,1250,325,8,0,anxious,1,2
+26,Eve,Miller,44,male,San Antonio,2024-08-21,76,176,24.54,86,106,66,1260,330,9,1,sad,2,3
+27,Grace,Wilson,45,female,San Diego,2024-08-18,77,177,24.58,87,107,67,1270,335,7,2,excited,3,4
+28,Helen,Moore,46,male,Dallas,2024-08-15,78,178,24.62,88,108,68,1280,340,8,3,angry,4,1
+29,Ivy,Anderson,47,female,Austin,2024-08-12,79,179,24.66,89,109,69,1290,345,9,4,calm,5,2
+30,John,Smith,48,male,New York,2024-08-09,50,150,22.22,90,110,60,1300,350,7,0,stressed,1,3
+31,Jane,Jones,49,female,Los Angeles,2024-08-06,51,151,22.37,91,111,61,1310,355,8,1,relaxed,2,4
+32,Alice,Taylor,50,male,Chicago,2024-08-03,52,152,22.51,92,112,62,1320,360,9,2,happy,3,1
+33,Bob,Brown,51,female,Houston,2024-07-31,53,153,22.64,93,113,63,1330,365,7,3,anxious,4,2
+34,Charlie,Williams,52,male,Phoenix,2024-07-28,54,154,22.77,94,114,64,1340,370,8,4,sad,5,3
+35,David,Davis,53,female,Philadelphia,2024-07-25,55,155,22.89,95,115,65,1350,375,9,0,excited,1,4
+36,Eve,Miller,54,male,San Antonio,2024-07-22,56,156,23.01,96,116,66,1360,380,7,1,angry,2,1
+37,Grace,Wilson,55,female,San Diego,2024-07-19,57,157,23.12,97,117,67,1370,385,8,2,calm,3,2
+38,Helen,Moore,56,male,Dallas,2024-07-16,58,158,23.23,98,118,68,1380,390,9,3,stressed,4,3
+39,Ivy,Anderson,57,female,Austin,2024-07-13,59,159,23.34,99,119,69,1390,395,7,4,relaxed,5,4
+40,John,Smith,58,male,New York,2024-07-10,60,160,23.44,60,100,60,1400,400,8,0,happy,1,1
+41,Jane,Jones,59,female,Los Angeles,2024-07-07,61,161,23.53,61,101,61,1410,405,9,1,anxious,2,2
+42,Alice,Taylor,60,male,Chicago,2024-07-04,62,162,23.62,62,102,62,1420,410,7,2,sad,3,3
+43,Bob,Brown,61,female,Houston,2024-07-01,63,163,23.71,63,103,63,1430,415,8,3,excited,4,4
+44,Charlie,Williams,62,male,Phoenix,2024-06-28,64,164,23.8,64,104,64,1440,420,9,4,angry,5,1
+45,David,Davis,63,female,Philadelphia,2024-06-25,65,165,23.88,65,105,65,1450,425,7,0,calm,1,2
+46,Eve,Miller,64,male,San Antonio,2024-06-22,66,166,23.95,66,106,66,1460,430,8,1,stressed,2,3
+47,Grace,Wilson,65,female,San Diego,2024-06-19,67,167,24.02,67,107,67,1470,435,9,2,relaxed,3,4
+48,Helen,Moore,66,male,Dallas,2024-06-16,68,168,24.09,68,108,68,1480,440,7,3,happy,4,1
+49,Ivy,Anderson,67,female,Austin,2024-06-13,69,169,24.16,69,109,69,1490,445,8,4,anxious,5,2
+50,John,Smith,18,male,New York,2024-06-10,70,170,24.22,70,110,60,1500,450,9,0,sad,1,3
+51,Jane,Jones,19,female,Los Angeles,2024-06-07,71,171,24.28,71,111,61,1510,455,7,1,excited,2,4
+52,Alice,Taylor,20,male,Chicago,2024-06-04,72,172,24.34,72,112,62,1520,460,8,2,angry,3,1
+53,Bob,Brown,21,female,Houston,2024-06-01,73,173,24.39,73,113,63,1530,465,9,3,calm,4,2
+54,Charlie,Williams,22,male,Phoenix,2024-05-29,74,174,24.44,74,114,64,1540,470,7,4,stressed,5,3
+55,David,Davis,23,female,Philadelphia,2024-05-26,75,175,24.49,75,115,65,1550,475,8,0,relaxed,1,4
+56,Eve,Miller,24,male,San Antonio,2024-05-23,76,176,24.54,76,116,66,1560,480,9,1,happy,2,1
+57,Grace,Wilson,25,female,San Diego,2024-05-20,77,177,24.58,77,117,67,1570,485,7,2,anxious,3,2
+58,Helen,Moore,26,male,Dallas,2024-05-17,78,178,24.62,78,118,68,1580,490,8,3,sad,4,3
+59,Ivy,Anderson,27,female,Austin,2024-05-14,79,179,24.66,79,119,69,1590,495,9,4,excited,5,4
+60,John,Smith,28,male,New York,2024-05-11,50,150,22.22,80,100,60,1600,500,7,0,angry,1,1
+61,Jane,Jones,29,female,Los Angeles,2024-05-08,51,151,22.37,81,101,61,1610,505,8,1,calm,2,2
+62,Alice,Taylor,30,male,Chicago,2024-05-05,52,152,22.51,82,102,62,1620,510,9,2,stressed,3,3
+63,Bob,Brown,31,female,Houston,2024-05-02,53,153,22.64,83,103,63,1630,515,7,3,relaxed,4,4
+64,Charlie,Williams,32,male,Phoenix,2024-04-29,54,154,22.77,84,104,64,1640,520,8,4,happy,5,1
+65,David,Davis,33,female,Philadelphia,2024-04-26,55,155,22.89,85,105,65,1650,525,9,0,anxious,1,2
+66,Eve,Miller,34,male,San Antonio,2024-04-23,56,156,23.01,86,106,66,1660,530,7,1,sad,2,3
+67,Grace,Wilson,35,female,San Diego,2024-04-20,57,157,23.12,87,107,67,1670,535,8,2,excited,3,4
+68,Helen,Moore,36,male,Dallas,2024-04-17,58,158,23.23,88,108,68,1680,540,9,3,angry,4,1
+69,Ivy,Anderson,37,female,Austin,2024-04-14,59,159,23.34,89,109,69,1690,545,7,4,calm,5,2
+70,John,Smith,38,male,New York,2024-04-11,60,160,23.44,90,110,60,1700,550,8,0,stressed,1,3
+71,Jane,Jones,39,female,Los Angeles,2024-04-08,61,161,23.53,91,111,61,1710,555,9,1,relaxed,2,4
+72,Alice,Taylor,40,male,Chicago,2024-04-05,62,162,23.62,92,112,62,1720,560,7,2,happy,3,1
+73,Bob,Brown,41,female,Houston,2024-04-02,63,163,23.71,93,113,63,1730,565,8,3,anxious,4,2
+74,Charlie,Williams,42,male,Phoenix,2024-03-30,64,164,23.8,94,114,64,1740,570,9,4,sad,5,3
+75,David,Davis,43,female,Philadelphia,2024-03-27,65,165,23.88,95,115,65,1750,575,7,0,excited,1,4
+76,Eve,Miller,44,male,San Antonio,2024-03-24,66,166,23.95,96,116,66,1760,580,8,1,angry,2,1
+77,Grace,Wilson,45,female,San Diego,2024-03-21,67,167,24.02,97,117,67,1770,585,9,2,calm,3,2
+78,Helen,Moore,46,male,Dallas,2024-03-18,68,168,24.09,98,118,68,1780,590,7,3,stressed,4,3
+79,Ivy,Anderson,47,female,Austin,2024-03-15,69,169,24.16,99,119,69,1790,595,8,4,relaxed,5,4
+80,John,Smith,48,male,New York,2024-03-12,70,170,24.22,60,100,60,1800,600,9,0,happy,1,1
+81,Jane,Jones,49,female,Los Angeles,2024-03-09,71,171,24.28,61,101,61,1810,605,7,1,anxious,2,2
+82,Alice,Taylor,50,male,Chicago,2024-03-06,72,172,24.34,62,102,62,1820,610,8,2,sad,3,3
+83,Bob,Brown,51,female,Houston,2024-03-03,73,173,24.39,63,103,63,1830,615,9,3,excited,4,4
+84,Charlie,Williams,52,male,Phoenix,2024-02-29,74,174,24.44,64,104,64,1840,620,7,4,angry,5,1
+85,David,Davis,53,female,Philadelphia,2024-02-26,75,175,24.49,65,105,65,1850,625,8,0,calm,1,2
+86,Eve,Miller,54,male,San Antonio,2024-02-23,76,176,24.54,66,106,66,1860,630,9,1,stressed,2,3
+87,Grace,Wilson,55,female,San Diego,2024-02-20,77,177,24.58,67,107,67,1870,635,7,2,relaxed,3,4
+88,Helen,Moore,56,male,Dallas,2024-02-17,78,178,24.62,68,108,68,1880,640,8,3,happy,4,1
+89,Ivy,Anderson,57,female,Austin,2024-02-14,79,179,24.66,69,109,69,1890,645,9,4,anxious,5,2
+90,John,Smith,58,male,New York,2024-02-11,50,150,22.22,70,110,60,1900,650,7,0,sad,1,3
+91,Jane,Jones,59,female,Los Angeles,2024-02-08,51,151,22.37,71,111,61,1910,655,8,1,excited,2,4
+92,Alice,Taylor,60,male,Chicago,2024-02-05,52,152,22.51,72,112,62,1920,660,9,2,angry,3,1
+93,Bob,Brown,61,female,Houston,2024-02-02,53,153,22.64,73,113,63,1930,665,7,3,calm,4,2
+94,Charlie,Williams,62,male,Phoenix,2024-01-30,54,154,22.77,74,114,64,1940,670,8,4,stressed,5,3
+95,David,Davis,63,female,Philadelphia,2024-01-27,55,155,22.89,75,115,65,1950,675,9,0,relaxed,1,4
+96,Eve,Miller,64,male,San Antonio,2024-01-24,56,156,23.01,76,116,66,1960,680,7,1,happy,2,1
+97,Grace,Wilson,65,female,San Diego,2024-01-21,57,157,23.12,77,117,67,1970,685,8,2,anxious,3,2
+98,Helen,Moore,66,male,Dallas,2024-01-18,58,158,23.23,78,118,68,1980,690,9,3,sad,4,3
+99,Ivy,Anderson,67,female,Austin,2024-01-15,59,159,23.34,79,119,69,1990,695,7,4,excited,5,4
+100,John,Smith,18,male,New York,2024-01-12,60,160,23.44,80,100,60,2000,700,8,0,angry,1,1

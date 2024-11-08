@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Edit Your Sentiment Data</h2>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div class="mb-3">
+        <label for="feedback" class="form-label">Feedback</label>
+        <input type="text" name="feedback" id="feedback" class="form-control" value="{{ sentiment.feedback }}" required>
+    </div>
+    <div class="mb-3">
+        <label for="sentiment" class="form-label">Sentiment</label>
+        <input type="text" name="sentiment" id="sentiment" class="form-control" value="{{ sentiment.sentiment }}" required>
+    </div>
+    <div class="mb-3">
+        <label for="score" class="form-label">Score</label>
+        <input type="number" step="0.1" name="score" id="score" class="form-control" value="{{ sentiment.score }}" required>
+    </div>
+    <div class="mb-3">
+        <label for="source" class="form-label">Source</label>
+        <input type="text" name="source" id="source" class="form-control" value="{{ sentiment.source }}" required>
+    </div>
+    <div class="mb-3">
+        <label for="date_recorded" class="form-label">Date Recorded</label>
+        <input type="date" name="date_recorded" id="date_recorded" class="form-control" value="{{ sentiment.date_recorded.strftime('%Y-%m-%d') }}" required>
+    </div>
+    <div class="mb-3">
+        <label for="user" class="form-label">User</label>
+        <input type="text" name="user" id="user" class="form-control" value="{{ sentiment.user }}" required>
+    </div>
+    <div class="mb-3">
+        <label for="platform" class="form-label">Platform</label>
+        <input type="text" name="platform" id="platform" class="form-control" value="{{ sentiment.platform }}" required>
+    </div>
+    <div class="mb-3">
+        <label for="language" class="form-label">Language</label>
+        <input type="text" name="language" id="language" class="form-control" value="{{ sentiment.language }}" required>
+    </div>
+    <div class="mb-3">
+        <label for="comments" class="form-label">Comments</label>
+        <textarea name="comments" id="comments" class="form-control" required>{{ sentiment.comments }}</textarea>
+    </div>
+    <div class="mb-3">
+        <label for="tags" class="form-label">Tags</label>
+        <input type="text" name="tags" id="tags" class="form-control" value="{{ sentiment.tags }}" required>
+    </div>
+
+    <button type="submit" class="btn btn-success">Update Sentiment Data</button>
+    <a href="{{ url_for('dashboard') }}" class="btn btn-secondary">Cancel</a>
+</form>
+{% endblock %}
