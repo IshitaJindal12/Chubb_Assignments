@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Query Results</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-spacing: 0;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        button {
+            margin-top: 15px;
+            padding: 8px 15px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test Query Results</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Region</th>
+                <th>Year</th>
+                <th>Country</th>
+                <th>Indicator</th>
+                <th>Income</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in results %}
+                {% if row.region is not none %}
+                    <tr>
+                        <td>{{ row.region }}</td>
+                        <td>{{ row.rec_year }}</td>
+                        <td>{{ row.country_name }}</td>
+                        <td>{{ row.indicator_name }}</td>
+                        <td>{{ row.income }}</td>
+                        <td>{{ row.indicator_value }}</td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="/">
+        <button>Back to Home</button>
+    </a>
+</body>
+</html>

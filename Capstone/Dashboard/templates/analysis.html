@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Graph Analysis</h1>
+
+    {% set plots = [
+        {'img': 'inflation_trend_south_asia.png', 'desc': 'This plot shows the inflation trends over the years for various South Asian countries, providing insight into economic stability.'},
+        {'img': 'gdp_per_capita_scatter.png', 'desc': 'This scatter plot depicts GDP per capita over the years in the Middle East & North Africa region, showing growth and disparities.'},
+        {'img': 'global_gdp_share.png', 'desc': 'This pie chart illustrates the share of global GDP by region in a specific year, visualizing economic contributions across the world.'},
+        {'img': 'inflation_vs_gdp.png', 'desc': 'This scatter plot compares inflation rates with GDP per capita in the East Asia & Pacific region, helping to understand economic correlations.'},
+        {'img': 'gross_savings_trend.png', 'desc': 'This bar chart shows the average gross savings as a percentage of GDP in Europe & Central Asia for the year 2022, highlighting economic behaviors.'}
+    ] %}
+
+    {% for plot in plots %}
+        <div class="plot-section">
+            <h2>Graph: {{ plot.img.split('.')[0].replace('_', ' ').title() }}</h2>
+            <img src="{{ url_for('static', filename=plot.img) }}" alt="Graph Image" class="plot-image">
+            <p>{{ plot.desc }}</p>
+        </div>
+        <br><br>
+    {% endfor %}
+</body>
+</html>
